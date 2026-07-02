@@ -1,0 +1,40 @@
+.quote {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: clamp(80px, 12vw, 150px) 24px;
+  text-align: center;
+}
+.quote-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 55% at 50% 50%, rgba(217, 169, 63, 0.09), transparent 70%);
+}
+.quote-mark {
+  position: relative;
+  font-family: var(--font-display);
+  font-size: 80px;
+  line-height: 0.4;
+  color: rgba(217, 169, 63, 0.4);
+}
+.quote blockquote {
+  position: relative;
+  margin: 18px 0 0;
+  font-size: clamp(22px, 3.6vw, 34px);
+  line-height: 1.45;
+  color: #f4efe3;
+  font-weight: 500;
+  font-style: italic;
+  text-wrap: balance;
+}
+.quote cite {
+  position: relative;
+  display: block;
+  margin: 22px 0 0;
+  font-size: 13px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: #b99a4c;
+}

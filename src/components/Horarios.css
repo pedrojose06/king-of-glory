@@ -1,0 +1,111 @@
+.sched-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+}
+.sched-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.filter-btn {
+  font-family: var(--font-body);
+  cursor: pointer;
+  padding: 9px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--text-soft);
+  border: 1px solid rgba(217, 169, 63, 0.35);
+  transition: all 0.2s;
+}
+.filter-btn:hover {
+  border-color: var(--gold);
+  color: var(--gold-hi);
+}
+.filter-btn.active {
+  background: linear-gradient(180deg, #f0ce6b, var(--gold));
+  color: var(--ink);
+  border-color: var(--gold);
+}
+.sched-scroll {
+  margin-top: 36px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+.sched-grid {
+  min-width: 760px;
+}
+.sched-row {
+  display: grid;
+  grid-template-columns: 88px repeat(5, 1fr);
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.sched-day {
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 17px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: linear-gradient(180deg, #f0ce6b, var(--gold));
+  padding: 10px 0;
+  border-radius: 4px;
+}
+.sched-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 19px;
+  color: var(--gold-mid);
+  background: rgba(217, 169, 63, 0.08);
+  border: 1px solid rgba(217, 169, 63, 0.25);
+  border-radius: 4px;
+}
+.sched-cell {
+  min-height: 58px;
+  border-radius: 4px;
+  padding: 9px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  transition: opacity 0.35s, transform 0.35s;
+}
+.sched-cell.empty {
+  border: 1px dashed rgba(217, 169, 63, 0.12);
+  padding: 0;
+}
+.sched-cell.dim {
+  opacity: 0.14;
+  transform: scale(0.97);
+}
+.sched-cell-label {
+  font-family: var(--font-display);
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.sched-cell-tag {
+  margin-top: 3px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8d8268;
+}
+.sched-hint {
+  margin: 18px 0 0;
+  font-size: 13px;
+  color: var(--text-faint);
+  text-align: center;
+}

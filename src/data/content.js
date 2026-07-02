@@ -1,6 +1,13 @@
 export const WHATSAPP = (msg) =>
   `https://wa.me/5514997242712?text=${encodeURIComponent(msg)}`
 
+export const CTA_MSG = 'Olá! Quero agendar uma aula experimental na King of Glory'
+
+export const SOCIALS = [
+  { label: 'Instagram', handle: '@academiakingofglory', url: 'https://www.instagram.com/academiakingofglory/' },
+  { label: 'Facebook', handle: 'Academy King of Glory', url: 'https://www.facebook.com/academykingofglory/' },
+]
+
 export const MODALIDADES = [
   {
     num: '01',
