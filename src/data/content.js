@@ -97,6 +97,12 @@ export const GALLERY = [
     desc: 'Turma inteira reunida na entrega de certificados do Muay Thai.',
   },
   {
+    src: '/assets/turma-thai.webp',
+    alt: 'Turma de Muay Thai reunida no tatame depois do treino',
+    caption: 'Turma de Muay Thai',
+    desc: 'A turma reunida no fim do treino — suor dividido vira time.',
+  },
+  {
     src: '/assets/turma-completa.webp',
     alt: 'Alunos da King of Glory reunidos com certificados',
     caption: 'Turma Completa',
