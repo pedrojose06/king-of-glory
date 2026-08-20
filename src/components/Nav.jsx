@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './Nav.css'
+import { IngressoBtn } from './Ingressos.jsx'
 
 const LINKS = [
   { href: '#modalidades', label: 'Modalidades' },
@@ -37,6 +38,7 @@ export default function Nav() {
         {LINKS.map((l) => (
           <a key={l.href} href={l.href}>{l.label}</a>
         ))}
+        <IngressoBtn className="in-nav">Ingressos 7º Interno</IngressoBtn>
       </div>
 
       <button
@@ -54,6 +56,7 @@ export default function Nav() {
         {LINKS.map((l) => (
           <a key={l.href} href={l.href}>{l.label}</a>
         ))}
+        <IngressoBtn>Ingressos 7º Interno</IngressoBtn>
       </div>
     </nav>
   )

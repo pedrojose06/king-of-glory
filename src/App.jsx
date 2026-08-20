@@ -7,6 +7,7 @@ import Galeria from './components/Galeria.jsx'
 import Citacao from './components/Citacao.jsx'
 import Contato from './components/Contato.jsx'
 import Footer from './components/Footer.jsx'
+import IngressoFlutuante from './components/Ingressos.jsx'
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
       <Citacao />
       <Contato />
       <Footer />
+      <IngressoFlutuante />
     </>
   )
 }
