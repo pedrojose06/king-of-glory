@@ -66,9 +66,48 @@ export const FILTERS = [
 export const MARQUEE_ITEMS = ['Muay Thai', 'Jiu Jitsu', 'Thai Kids', 'Jiu Kids', 'Thai Girls', 'King of Glory']
 
 export const GALLERY = [
-  { src: '/assets/foto-academia.webp', alt: 'Interior da academia King of Glory', caption: 'Estrutura' },
-  { src: '/assets/foto-graduacao.webp', alt: 'Cerimônia de graduação', caption: 'Graduação' },
-  { src: '/assets/foto-equipe.webp', alt: 'Equipe King of Glory reunida', caption: 'Equipe' },
+  {
+    src: '/assets/thai-kids.webp',
+    alt: 'Professora orientando crianças no treino de Muay Thai',
+    caption: 'Thai Kids',
+    desc: 'Técnica e disciplina desde cedo, com acompanhamento de perto em cada golpe.',
+  },
+  {
+    src: '/assets/clinch.webp',
+    alt: 'Professor demonstrando técnica de clinch de Muay Thai com aluno',
+    caption: 'Técnicas de Muay Thai',
+    desc: 'Demonstrações de clinch no Muay Thai.',
+  },
+  {
+    src: '/assets/jiu-equipe.webp',
+    alt: 'Equipe de Jiu Jitsu reunida no tatame',
+    caption: 'Equipe Jiu Jitsu',
+    desc: 'A família do kimono reunida depois de mais um treino puxado.',
+  },
+  {
+    src: '/assets/graduacao-jiu.webp',
+    alt: 'Alunos de Jiu Jitsu com seus certificados de graduação',
+    caption: 'Graduação Jiu Jitsu',
+    desc: 'Faixas e certificados entregues a adultos e crianças da equipe.',
+  },
+  {
+    src: '/assets/graduacao-thai.webp',
+    alt: 'Turma de Muay Thai exibindo certificados de graduação',
+    caption: 'Graduação Muay Thai',
+    desc: 'Turma inteira reunida na entrega de certificados do Muay Thai.',
+  },
+  {
+    src: '/assets/turma-completa.webp',
+    alt: 'Alunos da King of Glory reunidos com certificados',
+    caption: 'Turma Completa',
+    desc: 'Mais de cem alunos celebrando juntos o ciclo concluído.',
+  },
+  {
+    src: '/assets/corner.webp',
+    alt: 'Professor orientando dois alunos mirins no ringue',
+    caption: 'Eventos Internos',
+    desc: 'Onde nos desafiamos com quem conhecemos, no ringue de casa.',
+  },
 ]
 
 export const UNIDADES = [

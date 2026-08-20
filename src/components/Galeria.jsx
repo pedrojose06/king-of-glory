@@ -12,7 +12,10 @@ export default function Galeria() {
           {GALLERY.map((g) => (
             <figure key={g.src} className="gallery-item">
               <img src={g.src} alt={g.alt} loading="lazy" decoding="async" />
-              <figcaption>{g.caption}</figcaption>
+              <figcaption>
+                <strong>{g.caption}</strong>
+                <span>{g.desc}</span>
+              </figcaption>
             </figure>
           ))}
         </div>
