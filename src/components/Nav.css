@@ -20,7 +20,14 @@
   -webkit-backdrop-filter: blur(14px);
   border-bottom-color: var(--gold-border);
 }
+/* backdrop-filter no .nav vira containing block e quebra o inset:0 do menu fixo */
+.nav.open.scrolled {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
 .nav-brand {
+  position: relative;
+  z-index: 60;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -133,9 +140,9 @@
     align-items: center;
     justify-content: center;
     gap: 32px;
-    background: rgba(11, 10, 7, 0.97);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    background: rgba(11, 10, 7, 0.82);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s cubic-bezier(0.2, 0.7, 0.2, 1);
@@ -144,7 +151,7 @@
     opacity: 1;
     pointer-events: auto;
   }
-  .nav-mobile a {
+  .nav-mobile a:not(.ingresso-btn) {
     color: var(--text-soft);
     text-decoration: none;
     font-family: var(--font-display);
@@ -153,7 +160,7 @@
     text-transform: uppercase;
     transition: color 0.2s;
   }
-  .nav-mobile a:hover {
+  .nav-mobile a:not(.ingresso-btn):hover {
     color: var(--gold-hi);
   }
 }
