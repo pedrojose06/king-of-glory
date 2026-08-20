@@ -140,9 +140,9 @@
     align-items: center;
     justify-content: center;
     gap: 32px;
-    background: rgba(11, 10, 7, 0.82);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
+    /* ponytail: sem backdrop-filter — Chrome Android descarta o blur num
+       elemento animado por opacity. Fundo opaco funciona em todo lugar. */
+    background: rgba(11, 10, 7, 0.97);
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s cubic-bezier(0.2, 0.7, 0.2, 1);
