@@ -140,12 +140,18 @@
     align-items: center;
     justify-content: center;
     gap: 32px;
-    background: rgba(11, 10, 7, 0.82);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
+    /* fundo quase opaco: Chrome Android costuma ignorar backdrop-filter aqui */
+    background: rgba(11, 10, 7, 0.96);
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .nav-mobile {
+      background: rgba(11, 10, 7, 0.86);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
   }
   .nav.open .nav-mobile {
     opacity: 1;
