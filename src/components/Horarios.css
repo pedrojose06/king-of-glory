@@ -33,13 +33,46 @@
   color: var(--ink);
   border-color: var(--gold);
 }
+.sched-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 28px;
+  border-bottom: 1px solid rgba(217, 169, 63, 0.2);
+}
+.sched-tab {
+  font-family: var(--font-display);
+  cursor: pointer;
+  padding: 12px 22px;
+  font-size: 16px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  color: var(--text-soft);
+  transition: color 0.2s, border-color 0.2s;
+}
+.sched-tab:hover {
+  color: var(--gold-hi);
+}
+.sched-tab.active {
+  color: var(--gold-hi);
+  border-bottom-color: var(--gold);
+}
 .sched-scroll {
-  margin-top: 36px;
+  margin-top: 20px;
   overflow-x: auto;
   padding-bottom: 8px;
 }
 .sched-grid {
   min-width: 760px;
+}
+@media (pointer: coarse) {
+  .sched-scroll {
+    touch-action: pan-x pan-y;
+  }
 }
 .sched-row {
   display: grid;
