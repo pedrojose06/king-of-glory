@@ -45,14 +45,29 @@ export const MODS = {
 
 export const DAYS = ['Seg', 'Ter', 'Qua', 'Qui', 'Sex']
 
-export const GRID = [
-  { time: '6:00', cells: [null, 'MT', null, 'MT', null] },
-  { time: '7:00', cells: ['MT', null, 'MT', null, 'MT'] },
-  { time: '8:00', cells: [null, 'TG', null, 'TG', null] },
-  { time: '15:30', cells: ['MT', null, 'MT', null, 'MT'] },
-  { time: '18:00', cells: ['TK', 'JK', 'TK', 'JK', null] },
-  { time: '19:00', cells: ['JJ', 'MT', 'MT', 'MT', 'JJ'] },
-  { time: '20:00', cells: ['MT', 'JJ', 'JJ', 'JJ', 'MT'] },
+export const SCHEDULES = [
+  {
+    id: 'viaduto',
+    nome: 'Parque Viaduto',
+    grid: [
+      { time: '6:00', cells: [null, 'MT', null, 'MT', null] },
+      { time: '7:00', cells: ['MT', null, 'MT', null, 'MT'] },
+      { time: '8:00', cells: [null, 'TG', null, 'TG', null] },
+      { time: '15:30', cells: ['MT', null, 'MT', null, 'MT'] },
+      { time: '18:00', cells: ['TK', 'JK', 'TK', 'JK', null] },
+      { time: '19:00', cells: ['JJ', 'MT', 'MT', 'MT', 'JJ'] },
+      { time: '20:00', cells: ['MT', 'JJ', 'JJ', 'JJ', 'MT'] },
+    ],
+  },
+  {
+    id: 'edwirges',
+    nome: 'Sta Edwirges',
+    grid: [
+      { time: '7:00', cells: ['MT', 'MT', 'MT', 'MT', 'MT'] },
+      { time: '18:00', cells: ['JK', 'TK', 'JK', 'TK', null] },
+      { time: '19:00', cells: ['MT', 'MT', 'MT', 'MT', 'MT'] },
+    ],
+  },
 ]
 
 export const FILTERS = [
