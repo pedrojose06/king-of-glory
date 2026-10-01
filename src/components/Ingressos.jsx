@@ -1,12 +1,12 @@
 import './Ingressos.css'
+import { INGRESSOS } from '../data/content.js'
 
-const URL = 'https://interno.kingofglory.com.br/'
-
-export function IngressoBtn({ className = '', children = 'Ingressos' }) {
+export function IngressoBtn({ className = '', children = INGRESSOS.textoNav }) {
+  if (!INGRESSOS.ativo) return null
   return (
     <a
       className={`ingresso-btn ${className}`}
-      href={URL}
+      href={INGRESSOS.url}
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -18,7 +18,7 @@ export function IngressoBtn({ className = '', children = 'Ingressos' }) {
 export default function IngressoFlutuante() {
   return (
     <IngressoBtn className="ingresso-float">
-      Ingressos — 7º Interno
+      {INGRESSOS.textoFlutuante}
     </IngressoBtn>
   )
 }
