@@ -143,3 +143,12 @@ export const UNIDADES = [
     maps: 'https://www.google.com/maps/search/?api=1&query=Alameda+Urano+1-129+Bauru+SP',
   },
 ]
+
+// Botão de ingressos (nav + botão flutuante).
+// Para esconder: ativo = false. Para voltar com outro evento, troque os textos e ative.
+export const INGRESSOS = {
+  ativo: false,
+  url: 'https://interno.kingofglory.com.br/',
+  textoNav: 'Ingressos 7º Interno',
+  textoFlutuante: 'Ingressos — 7º Interno',
+}
